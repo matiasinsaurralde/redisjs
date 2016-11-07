@@ -1,4 +1,4 @@
-redisjs.so: clean redisjs.o
+redisjs.so: redisjs.o
 	gcc -Lnode/out/Release -lnode -o redisjs.so redisjs.o -dynamiclib
 
 redisjs.o: redisjs.c redismodule.h
